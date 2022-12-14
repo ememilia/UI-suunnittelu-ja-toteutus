@@ -1,0 +1,137 @@
+#content {
+  /* sivun taustaväri (body) */
+  background-color: antiquewhite;
+}
+.navbar {
+  background-color: #c4dfaa;
+  border: 3px solid #73a9ad;
+  width: 80%;
+  margin-left: 10%;
+}
+h1 {
+  text-align: center;
+  /* google fontti */
+  font-family: "Patrick Hand", cursive;
+}
+#logo {
+  margin: 10px 130px;
+}
+
+/* Articlen muokkaukset */
+article {
+  border: 3px solid #73a9ad;
+  background-color: #90c8ac;
+  width: 80%;
+  height: fit-content;
+  margin: 20px 150px;
+  margin-left: 10%;
+}
+#question {
+  display: block;
+  padding: 20px;
+}
+
+/* Alapalkin ulkonäkö */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  background-color: #c4dfaa;
+  width: 80%;
+  height: 110px;
+  margin: 20px 150px;
+  margin-left: 10%;
+  border: 3px solid #73a9ad;
+}
+
+/* kysymyksen asettelu keskelle */
+.container {
+  text-align: center;
+}
+
+/* valitsee divin alta ensimmäiset neljä eli vastaus napit */
+div:nth-child(-n + 4) {
+  display: flex;
+  flex-direction: column;
+}
+#d {
+  margin-bottom: 30px;
+}
+/* valitsee p teksti elementin  */
+article > h1 + p {
+  text-align: center;
+}
+
+.answerBTN {
+  border: 3px solid #73a9ad;
+  margin: 3px;
+  background-color: #c4dfaa;
+}
+/* väärä vastaus napin väri */
+.wrong {
+  background-color: red;
+  border: 3px solid red;
+}
+/* oikea vastaus napin väri */
+.correct {
+  background-color: greenyellow;
+  border: 3px solid greenyellow;
+}
+/* englannin lippujen muotoilu */
+div > img {
+  width: 50px;
+  opacity: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.flag.correct {
+  opacity: 100%;
+}
+#allAnswers {
+  display: none;
+  border: solid #73a9ad;
+  margin-bottom: 20px;
+}
+th,
+tr {
+  border: 2px solid #73a9ad;
+}
+/* google iconin tyylit */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: black;
+}
+footer > a {
+  margin: 5px 10px 5px 10px;
+}
+
+/* google fontin tyyli */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #logo {
+    display: none;
+  }
+  article {
+    width: auto;
+    height: fit-content;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* Alapalkin ulkonäkö */
+  footer {
+    width: auto;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  table {
+    display: inline-table;
+    width: min-content;
+  }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Englanti visa</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+<!-- google icon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- google fontin link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <script src="code.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="content">
+    <img id="logo" src="ensv.png" alt="logo" />
+    <!-- Bootstrap navbar alkaa -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#" style="display: none">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/Web-projekti/index.html">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../visat/englantivisa.html"
+              >Englantivisa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../visat/historiavisa.html"
+              >Historiavisa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../visat/luontovisa.html">Luontovisa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../visat/musavisa.html">Musavisa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../tietojasivu/tietoja.html">Tietoja</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Bootstrap navbar loppuu -->
+    <article>
+      <h1>Englannin kielen visa</h1>
+      <p> Tervetuloa englannin kielen visaan. Visassa on viisi simppeliä kysymystä millä voit testata omaa kielen taitoa. Onnea!</p>
+      
+      <!-- Kysymyskset ja vastaukset valintanapeilla -->
+      <div class="container">
+        <div id="question-container" class="hide"></div>
+        <div id="question">Question</div>
+        <div id="question-explain"></div>
+        <div id="answerButtons" class="btn-grid">
+          <!-- Vastausvaihtoehto napit -->
+          <button class="answerBTN" id="a">Answer 1</button>
+          <button class="answerBTN" id="b">Answer 2</button>
+          <button class="answerBTN" id="c">Answer 3</button>
+          <button class="answerBTN" id="d">Answer 4</button>
+          <!-- Bootstrap button dark -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            class="nextButton"
+            id="next-button"
+          >
+            Seuraava kysymys
+          </button>
+        </div>
+       
+        <!-- div kuville jotka kertoo pistemäärän -->
+        <div>
+          <img id="flag1"
+            class="flag"
+            src="englannin lippu.png"
+            alt="englannin lippu"
+          />
+          <img id="flag2"
+            class="flag"
+            src="englannin lippu.png"
+            alt="englannin lippu"
+          />
+          <img id="flag3"
+            class="flag"
+            src="englannin lippu.png"
+            alt="englannin lippu"
+          />
+          <img id="flag4"
+            class="flag"
+            src="englannin lippu.png"
+            alt="englannin lippu"
+          />
+          <img id="flag5"
+            class="flag"
+            src="englannin lippu.png"
+            alt="englannin lippu"
+          />
+        </div>
+        <table id="allAnswers">
+          <tr>
+            <th>1.Mitä tarkoittaa clock tai watch?</th>
+            <th>2.Miten kirjoitetaan Orava englanniksi?</th>
+            <th>3.Mikä on oikea lyhenne i am:lle eli minä olen ?</th>
+            <th>4.Mikä on omena englanniksi?</th>
+            <th>5.Miten kirjoitetaan minun nimeni on?</th>
+          </tr>
+          <tr>
+            <td>Katso = Look</td>
+            <td>Octopus = Mustekala</td>
+            <td>Am = Aamupäivä</td>
+            <td>Apple = Omena</td>
+            <td>My age is = Ikäni on </td>
+          </tr>
+          <tr>
+            <td>Me = We</td>
+            <td>Squirrel = Orava</td>
+            <td>Is = On</td>
+            <td>Kiwi = Kiivi</td>
+            <td>My name is = Nimeni on</td>
+          </tr>
+          <tr>
+            <td>Kello = Clock/Watch</td>
+            <td>Bird = lintu</td> 
+            <td>I = Minä</td>
+            <td>Watermelon = Vesimeloni</td>
+            <td>My dogs name is = Koirani nimi on</td>
+          </tr>
+          <tr>
+            <td>Avaruus = Space</td>
+            <td>Beaver = Majava</td>
+            <td>I'm = Minä olen </td>
+            <td>Orange = Appelsiini</td>
+            <td>My address is = Osoitteeni on</td>
+          </tr>
+        </table>
+        <!-- google icon arrow forward -->
+          <a href="/Web-projekti/visat/historiavisa.html"><span class="material-symbols-outlined">
+            arrow_forward
+            </span>
+          </a>
+      </div>
+    </article>
+    <!-- alapalkki -->
+    <footer>
+      <a>Linkki sivulle mistä sivun kuvat on otettu:</a>
+      <a
+        class="link"
+        href="https://similarpng.com/united-kingdom-flag-icon-on-transparent-background-png/#getdownload"
+        >similarpng</a
+      >
+    </footer>
+  </body>
+</html>
